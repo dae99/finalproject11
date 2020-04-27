@@ -1,0 +1,163 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 4fr 9fr 6fr;
+}
+.header {
+   grid-column: 1/-1;; 
+}
+.main {
+    grid-column: 1/-1;
+}
+.footer {
+    grid-column: 1/-1;
+}
+html, body {
+    margin: 0px;
+    font-family: 'Odibee Sans';
+  
+  }
+  
+  .header {
+    font-family: 'Crimson Text', serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+  }
+  
+  
+  ul {
+    
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .menubar li {
+    
+    display: inline-block;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    background: #111111;
+    border-radius: 3px;
+    margin-right: 3px;
+  }
+  
+  
+  .menubar li a {
+    
+    color: #eb4f34;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menubar li:hover {
+    background: #ebdb34;
+  }
+  
+  .menubar li:hover a {
+    color: #eb4f34;
+  }
+  
+  
+  .menubar li ul {
+  display: none;
+    position: absolute;
+    left: 0;
+    margin-top: 1rem;
+    z-index: 10; 
+  }
+  
+  
+  .menubar li:hover ul {
+    display: block;
+  }
+  
+  
+  .menubar li ul li:hover a {
+    color: #111111;
+  }
+  
+   
+  .menubar li ul li {
+    width: 100%;
+  }
+  
+  .main {
+  background-color: #111111;
+  color: #eb4f34;
+  border-color: #eb4f34;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+  .main a {
+    color: #eb4f34;
+    text-decoration: none;
+    display: block;
+    border-style: solid;
+    border-color: #eb4f34;
+    padding: 1px;
+  }
+  .main a:hover{
+    color:#ebdb34;
+    border-color: #ebdb34;
+    background-color: #111111;
+  }
+  /* Picture*/
+
+
+  .twinkle {
+    
+    padding: 2rem;
+    text-align: center;
+  }
+  .twinkle img {
+        width: 100%;
+        max-width: 200px;
+      }
+  .little {
+    
+    padding: 2rem;
+    text-align: center;
+  } 
+  .little img {
+    width: 100%;
+    max-width: 200px;
+  }
+  .how {
+  
+    padding: 2rem;
+    text-align: center;
+  }
+  .how img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  h1 {
+    color: #ebdb34;
+  }
+  h2 {
+    color: #eb4f34;
+    text-size-adjust: 40px;
+  }
+  
+  
+  .footer {
+    background-color: #111111;
+    display: grid;
+    
+}
